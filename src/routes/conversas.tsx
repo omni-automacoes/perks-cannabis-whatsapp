@@ -36,7 +36,7 @@ const statusStyles: Record<Conversation["status"], string> = {
 
 /** Tela principal: layout de duas colunas em altura total, no estilo WhatsApp Web. */
 function ConversationsPage() {
-  const [selectedId, setSelectedId] = useState(conversations[0].id);
+  const [selectedId, setSelectedId] = useState(conversations[0]!.id);
   const [query, setQuery] = useState("");
 
   const filtered = useMemo(
